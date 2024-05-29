@@ -1,0 +1,22 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_28_0_1;akzeptanz_eskala;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_28_0_2;akzeptanz_eskala;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_28_0_3;akzeptanz_eskala;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_28_0_4;akzeptanz_eskala;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_28_0_5;akzeptanz_eskala;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_28_0_6;akzeptanz_eskala;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_28_0_7;akzeptanz_eskala;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Akzeptanz Eskala]) @HIDDEN"
+oid_1_1_2_28_1_1;akzeptanz_eskala;"Bitte bewerten Sie die folgenden Aussagen.";dropdown;"Wie einfach war es für Sie, dieses Computerprogramm zu benutzen?";"1, Sehr schwierig | 2, Schwierig | 3, Neutral | 4, Leicht | 5, Sehr leicht";;;;;;;y;;;;;
+oid_1_1_2_28_1_2;akzeptanz_eskala;;dropdown;"Wie verständlich waren die Fragen?";"1, Schwer zu verstehen | 2, Eher schwer zu verstehen | 3, Neutral | 4, Eher leicht zu verstehen | 5, Leicht zu verstehen";;;;;;;y;;;;;
+oid_1_1_2_28_1_3;akzeptanz_eskala;;dropdown;"Wie viel Spaß hat es Ihnen gemacht, dieses Computerprogramm zu benutzen?";"1, Gar nicht | 2, Wenig | 3, Neutral | 4, Sehr | 5, Sehr viel";;;;;;;y;;;;;
+oid_1_1_2_28_1_4;akzeptanz_eskala;;dropdown;"Wie hilfreich war dieses Computerprogramm bei der Beschreibung Ihrer Symptome und Ihrer Lebensqualität?";"1, Überhaupt nicht hilfreich | 2, Nicht hilfreich | 3, Neutral | 4, Hilfreich | 5, Sehr hilfreich";;;;;;;y;;;;;
+oid_1_1_2_28_1_5;akzeptanz_eskala;;dropdown;"War der Zeitaufwand für die Beantwortung dieser Fragen akzeptabel?";"1, Sehr inakzeptabel | 2, Inakzeptabel | 3, Neutral | 4, Akzeptabel | 5, Sehr gut akzeptabel";;;;;;;y;;;;;
+oid_1_1_2_28_1_6;akzeptanz_eskala;;dropdown;"Wie würden Sie Ihre allgemeine Zufriedenheit mit diesem Computerprogramm bewerten?";"1, Sehr unzufrieden | 2, Unzufrieden | 3, Neutral | 4, Zufrieden | 5, Sehr zufrieden";;;;;;;y;;;;;
+oid_1_1_2_28_2_1;akzeptanz_eskala;;calc;"Akzeptanz E-Skala";"sum([oid_1_1_2_28_1_1],
+[oid_1_1_2_28_1_2],
+[oid_1_1_2_28_1_3],
+[oid_1_1_2_28_1_4],
+[oid_1_1_2_28_1_5],
+[oid_1_1_2_28_1_6]
+)";"Algorithmus zur Berechnung der Akzeptanz E-Skala";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_28_3_1;akzeptanz_eskala;;descriptive;"© Tariman, J. D., Berry, D. L., Halpenny, B., Wolpin, S., & Schepp, K.";;;;;;;;;;;;;

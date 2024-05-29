@@ -1,0 +1,36 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_11_0_1;working_alliance_inventory_revidierte_kurzform_wai;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_11_0_2;working_alliance_inventory_revidierte_kurzform_wai;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_11_0_3;working_alliance_inventory_revidierte_kurzform_wai;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_11_0_4;working_alliance_inventory_revidierte_kurzform_wai;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_11_0_5;working_alliance_inventory_revidierte_kurzform_wai;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_11_0_6;working_alliance_inventory_revidierte_kurzform_wai;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_11_0_7;working_alliance_inventory_revidierte_kurzform_wai;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Working Alliance Inventory - revidierte Kurzform (WAI-SR) - P]) @HIDDEN"
+oid_1_1_2_11_1_1;working_alliance_inventory_revidierte_kurzform_wai;"Sie finden hier Aussagen über Aspekte der therapeutischen Arbeitsbeziehung zwischen Therapeuten und Patienten. Bitte beurteilen Sie die Aussagen auf fünf Stufen von selten bis immer. Manche Fragen sind aus einer Perspektive, die über die Therapiestunden hinausgeht, zu beantworten.";dropdown;"Durch die Therapiestunden ist mir klarer geworden, wie ich mich verändern kann.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_2;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Was ich in der Therapie mache, eröffnet mir neue Sichtweisen auf mein Problem.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_3;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Ich glaube, mein/e Therapeut/in mag mich.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_4;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Mein/e Therapeut/in und ich arbeiten gemeinsam daran, Therapieziele zu setzen.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_5;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Mein/e Therapeut/in achten einander.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_6;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Mein/e Therapeut/in und ich arbeiten auf Ziele hin über die wir uns einig sind.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_7;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Ich spüre, dass mein/e Therapeut/in mich schätzt.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_8;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Mein/e Therapeut/in stimmen überein, woran es für mich wichtig ist zu arbeiten.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_9;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Ich spüre, dass mein/e Therapeut/in auch dann zu mir steht, wenn ich etwas tue, was er/sie nicht gutheißt.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_10;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Ich spüre, dass das, was ich in der Therapie tue, mir helfen wird, die von mir gewünschten Veränderungen zu erreichen.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_11;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Mein/e Therapeut/in und ich sind uns im Klaren darüber, welche Veränderungen gut für mich wären.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_1_12;working_alliance_inventory_revidierte_kurzform_wai;;dropdown;"Ich glaube, dass es richtig ist, wie wir an meinem Problem arbeiten.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_11_2_1;working_alliance_inventory_revidierte_kurzform_wai;;calc;Goal;"sum([oid_1_1_2_11_1_4]
+,[oid_1_1_2_11_1_6]
+,[oid_1_1_2_11_1_8]
+,[oid_1_1_2_11_1_11]
+)";"Algorithmus zur Berechnung des Goal Items";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_11_2_2;working_alliance_inventory_revidierte_kurzform_wai;;calc;Task;"sum([oid_1_1_2_11_1_1]
+,[oid_1_1_2_11_1_2]
+,[oid_1_1_2_11_1_10]
+,[oid_1_1_2_11_1_12]
+)";"Algorithmus zur Berechnung des Task Items";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_11_2_3;working_alliance_inventory_revidierte_kurzform_wai;;calc;Bond;"sum([oid_1_1_2_11_1_3]
+,[oid_1_1_2_11_1_5]
+,[oid_1_1_2_11_1_7]
+,[oid_1_1_2_11_1_9]
+)";"Algorithmus zur Berechnung des Bond Items";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_11_3_1;working_alliance_inventory_revidierte_kurzform_wai;;descriptive;"© Society for Psychotherapy Research (SPR)";;;;;;;;;;;;;

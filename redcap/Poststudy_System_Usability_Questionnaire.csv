@@ -1,0 +1,60 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_29_0_1;poststudy_system_usability_questionnaire_pssuq;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_29_0_2;poststudy_system_usability_questionnaire_pssuq;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_29_0_3;poststudy_system_usability_questionnaire_pssuq;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_29_0_4;poststudy_system_usability_questionnaire_pssuq;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_29_0_5;poststudy_system_usability_questionnaire_pssuq;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_29_0_6;poststudy_system_usability_questionnaire_pssuq;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_29_0_7;poststudy_system_usability_questionnaire_pssuq;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Post-Study System Usability Questionnaire (PSSUQ)]) @HIDDEN"
+oid_1_1_2_29_1_1;poststudy_system_usability_questionnaire_pssuq;"Bitte bewerten Sie die folgenden Aussagen auf einer Skala von ""trifft voll und ganz zu"" bis ""trifft gar nicht zu"".";dropdown;"Insgesamt bin ich damit zufrieden, wie einfach dieses System zu bedienen ist.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_2;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Dieses System war einfach zu bedienen.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_3;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Mit diesem System konnte ich die Aufgaben und Szenarien schnell erledigen.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_4;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Ich habe mich mit diesem System wohl gefühlt.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_5;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Der Umgang mit diesem System war leicht zu erlernen.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_6;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Ich glaube, dass ich mit diesem System schnell produktiv werden kann.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_7;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Das System gab Fehlermeldungen aus, die mir deutlich sagten, wie ich Probleme beheben kann.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_8;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Wenn mir bei der Verwendung des Systems ein Fehler unterlief, konnte ich ihn leicht und schnell beheben.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_9;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Die Informationen (z. B. Online-Hilfe, Bildschirmmeldungen und sonstige Dokumentation), die mit diesem System bereitgestellt wurden, waren eindeutig.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_10;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Es war einfach, die benötigten Informationen zu finden.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_11;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Die Informationen haben mir bei der Bewältigung der Aufgaben und Szenarien sehr geholfen.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_12;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Die Anordnung der Informationen auf den Bildschirmen des Systems war klar.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_13;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Die Schnittstelle dieses Systems war angenehm.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_14;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Die Benutzeroberfläche dieses Systems hat mir gut gefallen.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_15;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Dieses System hat alle Funktionen und Möglichkeiten, die ich erwarte.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_1_16;poststudy_system_usability_questionnaire_pssuq;;dropdown;"Insgesamt bin ich mit diesem System zufrieden.";"0, Keine Angabe | 1, Trifft voll und ganz zu | 2, Trifft zu | 3, Trifft eher zu | 4, Neutral | 5, Trifft eher nicht zu | 6, Trifft nicht zu | 7, Trifft gar nicht zu";;;;;;;y;;;;;
+oid_1_1_2_29_2_1;poststudy_system_usability_questionnaire_pssuq;;calc;PSSUQ;"sum([oid_1_1_2_29_1_1]
+,[oid_1_1_2_29_1_2]
+,[oid_1_1_2_29_1_3]
+,[oid_1_1_2_29_1_4]
+,[oid_1_1_2_29_1_5]
+,[oid_1_1_2_29_1_6]
+,[oid_1_1_2_29_1_7]
+,[oid_1_1_2_29_1_8]
+,[oid_1_1_2_29_1_9]
+,[oid_1_1_2_29_1_10]
+,[oid_1_1_2_29_1_11]
+,[oid_1_1_2_29_1_12]
+,[oid_1_1_2_29_1_13]
+,[oid_1_1_2_29_1_14]
+,[oid_1_1_2_29_1_15]
+,[oid_1_1_2_29_1_16]
+)";"Algorithmus zur Berechnung des PSSUQ Scores";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_29_2_2;poststudy_system_usability_questionnaire_pssuq;;calc;"Nützlichkeit des Systems";"sum([oid_1_1_2_29_1_1]
+,[oid_1_1_2_29_1_2]
+,[oid_1_1_2_29_1_3]
+,[oid_1_1_2_29_1_4]
+,[oid_1_1_2_29_1_5]
+,[oid_1_1_2_29_1_6]
+)";"Algorithmus zur Berechnung des SYSUSE Scores";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_29_2_3;poststudy_system_usability_questionnaire_pssuq;;calc;"Qualität der Informationen";"sum([oid_1_1_2_29_1_7]
+,[oid_1_1_2_29_1_8]
+,[oid_1_1_2_29_1_9]
+,[oid_1_1_2_29_1_10]
+,[oid_1_1_2_29_1_11]
+,[oid_1_1_2_29_1_12]
+)";"Algorithmus zur Berechnung des INFOQUAL Scores";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_29_2_4;poststudy_system_usability_questionnaire_pssuq;;calc;"Qualität der Schnittstelle";"sum([oid_1_1_2_29_1_13]
+,[oid_1_1_2_29_1_14]
+,[oid_1_1_2_29_1_15]
+,[oid_1_1_2_29_1_16]
+)";"Algorithmus zur Berechnung des INTERQUAL Scores";;;;;;;;;;;" @HIDDEN"

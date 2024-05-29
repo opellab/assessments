@@ -1,0 +1,34 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_4_0_1;world_health_organization_disability_assessment_sc;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_4_0_2;world_health_organization_disability_assessment_sc;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_4_0_3;world_health_organization_disability_assessment_sc;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_4_0_4;world_health_organization_disability_assessment_sc;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_4_0_5;world_health_organization_disability_assessment_sc;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_4_0_6;world_health_organization_disability_assessment_sc;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_4_0_7;world_health_organization_disability_assessment_sc;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:World Health Organization Disability Assessment Schedule 2.0 (WHODAS 2.0 Short Form)]) @HIDDEN"
+oid_1_1_2_4_1_1;world_health_organization_disability_assessment_sc;"In diesem Fragebogen geht es um Schwierigkeiten, die aufgrund von Gesundheitsproblemen entstehen können. Gesundheitsprobleme beinhaltet Krankheiten oder Erkrankungen, andere Gesundheitsprobleme, die lang oder kurz andauerd sein können, Verletzungen, mentale oder emotionale Probleme sowie Drogen- oder Alkoholprobleme. Denken Sie an die letzten 30 Tage zurück, und beantworten Sie die folgenden Fragen im Hinblick darauf, wie viele Schwierigkeiten Sie bei der Durchführung der nachfolgenden Aktivitäten hatten.";dropdown;"Eine längere Zeit (ca. 30 Minuten) zu stehen?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_2;world_health_organization_disability_assessment_sc;;dropdown;"Ihren Haushaltspflichten nachzukommen?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_3;world_health_organization_disability_assessment_sc;;dropdown;"Neue Aufgaben zu lernen (z.B. erlernen an einem neuen Ort zu gelangen, den Sie nicht kannten)";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_4;world_health_organization_disability_assessment_sc;;dropdown;"Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_5;world_health_organization_disability_assessment_sc;;dropdown;"Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_6;world_health_organization_disability_assessment_sc;;dropdown;"Sich für 10 Minuten auf etwas zu konzentrieren?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_7;world_health_organization_disability_assessment_sc;;dropdown;"Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_8;world_health_organization_disability_assessment_sc;;dropdown;"Ihren gesamten Körper zu waschen?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_9;world_health_organization_disability_assessment_sc;;dropdown;"Sich anzuziehen?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_10;world_health_organization_disability_assessment_sc;;dropdown;"Im Umgang mit Personen, die Sie nicht kennen?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_11;world_health_organization_disability_assessment_sc;;dropdown;"Eine Freundschaft aufrechtzuerhalten?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_1_12;world_health_organization_disability_assessment_sc;;dropdown;"Bei der Bewältigung Ihres Arbeits- /Schulalltags?";"0, Keine | 1, Geringe | 2, Mäßige | 3, Starke | 4, Sehr starke/nicht möglich";;;;;;;y;;;;;
+oid_1_1_2_4_2_1;world_health_organization_disability_assessment_sc;;calc;WHODAS;"sum([oid_1_1_2_4_1_1]
+,[oid_1_1_2_4_1_2]
+,[oid_1_1_2_4_1_3]
+,[oid_1_1_2_4_1_4]
+,[oid_1_1_2_4_1_5]
+,[oid_1_1_2_4_1_6]
+,[oid_1_1_2_4_1_7]
+,[oid_1_1_2_4_1_8]
+,[oid_1_1_2_4_1_9]
+,[oid_1_1_2_4_1_10]
+,[oid_1_1_2_4_1_11]
+,[oid_1_1_2_4_1_12]
+)";"Algorithmus zur Berechnung des WHODAS Scores";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_4_3_1;world_health_organization_disability_assessment_sc;;descriptive;"© World Health Organization";;;;;;;;;;;;;

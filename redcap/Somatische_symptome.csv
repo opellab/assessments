@@ -1,0 +1,34 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_3_0_1;somatische_symptome;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_3_0_2;somatische_symptome;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_3_0_3;somatische_symptome;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_3_0_4;somatische_symptome;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_3_0_5;somatische_symptome;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_3_0_6;somatische_symptome;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_3_0_7;somatische_symptome;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Somatische Symptome]) @HIDDEN"
+oid_1_1_2_3_1_1;somatische_symptome;"Im Folgenden finden Sie eine Liste von Problemen und Beschwerden, die man manchmal hat. Bitte lesen sie jede Frage sorgfältig durch und entscheiden Sie, wie sehr Sie in den letzten vier Wochen einschließlich heute durch diese Beschwerden gestört oder bedrängt worden sind.";dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Kopfschmerzen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_2;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Ohnmachts- oder Schwindelgefühlen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_3;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Herz- und Brustschmerzen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_4;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Kreuzschmerzen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_5;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Übelkeit oder Magenverstimmung?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_6;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Muskelschmerzen (Muskelkater, Gliederreißen)?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_7;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Schwierigkeiten beim Atmen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_8;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Hitzewallungen oder Kälteschauer?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_9;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Taubheit oder Kribbeln in einzelnen Körperteilen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_10;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter dem Gefühl, einen Klumpen (Kloß) im Hals zu haben?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_11;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Schwächegefühl in einzelnen Körperteilen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_1_12;somatische_symptome;;dropdown;"Wie sehr litten Sie in den vergangenen 4 Wochen bis heute unter Schweregefühl in den Armen oder den Beinen?";"0, überhaupt nicht | 1, ein wenig | 2, ziemlich | 3, stark | 4, sehr stark";;;;;;;y;;;;;
+oid_1_1_2_3_2_1;somatische_symptome;;calc;SCL90-R;"sum([oid_1_1_2_3_1_1]
+,[oid_1_1_2_3_1_2]
+,[oid_1_1_2_3_1_3]
+,[oid_1_1_2_3_1_4]
+,[oid_1_1_2_3_1_5]
+,[oid_1_1_2_3_1_6]
+,[oid_1_1_2_3_1_7]
+,[oid_1_1_2_3_1_8]
+,[oid_1_1_2_3_1_9]
+,[oid_1_1_2_3_1_10]
+,[oid_1_1_2_3_1_11]
+,[oid_1_1_2_3_1_12]
+)";"Algorithmus zur Berechnung des SCL90-R Scores";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_3_3_1;somatische_symptome;;descriptive;"© Leonard R Derogatis";;;;;;;;;;;;;

@@ -1,0 +1,28 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_10_0_1;patient_health_questionnaire_phq9;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_10_0_2;patient_health_questionnaire_phq9;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_10_0_3;patient_health_questionnaire_phq9;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_10_0_4;patient_health_questionnaire_phq9;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_10_0_5;patient_health_questionnaire_phq9;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_10_0_6;patient_health_questionnaire_phq9;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_10_0_7;patient_health_questionnaire_phq9;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Patient Health Questionnaire (PHQ-9)]) @HIDDEN"
+oid_1_1_2_10_1_1;patient_health_questionnaire_phq9;"Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?";dropdown;"1. Wenig Interesse oder Freude an Ihren Tätigkeiten";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_2;patient_health_questionnaire_phq9;;dropdown;"2. Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_3;patient_health_questionnaire_phq9;;dropdown;"3. Schwierigkeiten, ein- oder durchzuschlafen, oder vermehrter Schlaf";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_4;patient_health_questionnaire_phq9;;dropdown;"4. Müdigkeit oder Gefühl, keine Energie zu haben";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_5;patient_health_questionnaire_phq9;;dropdown;"5. Verminderter Appetit oder übermäßiges Bedürfnis zu essen";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_6;patient_health_questionnaire_phq9;;dropdown;"6. Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_7;patient_health_questionnaire_phq9;;dropdown;"7. Schwierigkeiten, sich auf etwas zu konzentrieren, z. B. beim Zeitungslesen oder Fernsehen";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_8;patient_health_questionnaire_phq9;;dropdown;"8. Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil ""zappelig"" oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_1_9;patient_health_questionnaire_phq9;;dropdown;"9. Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten";"0, An einzelnen Tagen | 1, An mehr als der Hälfte der Tage | 2, Beinahe jeden Tag | 3, Überhaupt nicht";;;;;;;y;;;;;
+oid_1_1_2_10_2_1;patient_health_questionnaire_phq9;;calc;PHQ-9;"sum([oid_1_1_2_10_1_1]
+,[oid_1_1_2_10_1_2]
+,[oid_1_1_2_10_1_3]
+,[oid_1_1_2_10_1_4]
+,[oid_1_1_2_10_1_5]
+,[oid_1_1_2_10_1_6]
+,[oid_1_1_2_10_1_7]
+,[oid_1_1_2_10_1_8]
+,[oid_1_1_2_10_1_9]
+)";"Algorithmus zur Berechnung des PHQ-9 Scores";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_10_3_1;patient_health_questionnaire_phq9;;descriptive;"© Pfizer Inc. ";;;;;;;;;;;;;

@@ -1,0 +1,97 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_6_0_1;childhood_trauma_questionnaire_ctq;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_6_0_2;childhood_trauma_questionnaire_ctq;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_6_0_3;childhood_trauma_questionnaire_ctq;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_6_0_4;childhood_trauma_questionnaire_ctq;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_6_0_5;childhood_trauma_questionnaire_ctq;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_6_0_6;childhood_trauma_questionnaire_ctq;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_6_0_7;childhood_trauma_questionnaire_ctq;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Childhood Trauma Questionnaire (CTQ)]) @HIDDEN"
+oid_1_1_2_6_1_1;childhood_trauma_questionnaire_ctq;"Als ich aufwuchs...";dropdown;"1. ...hatte ich nicht genug zu essen.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_2;childhood_trauma_questionnaire_ctq;;dropdown;"2. ...wußte ich, daß sich jemand um mich sorgte und mich beschützte.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_3;childhood_trauma_questionnaire_ctq;;dropdown;"3. ..bezeichneten mich Personen aus meiner Familie als ´dumm´, ´faul´ oder ´häßlich´.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_4;childhood_trauma_questionnaire_ctq;;dropdown;"4. ...waren meine Eltern zu betrunken oder von anderen Drogen ´high´, um für die Familie zu sorgen.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_5;childhood_trauma_questionnaire_ctq;;dropdown;"5. ...gab es jemand in der Familie, der mir das Gefühl gab, wichtig und jemand Besonderes zu sein.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_6;childhood_trauma_questionnaire_ctq;;dropdown;"6. ...mußte ich dreckige Kleidung tragen.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_7;childhood_trauma_questionnaire_ctq;;dropdown;"7. ...hatte ich das Gefühl, geliebt zu werden.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_8;childhood_trauma_questionnaire_ctq;;dropdown;"8. ...glaubte ich, daß meine Eltern wünschten, ich wäre nie geboren.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_9;childhood_trauma_questionnaire_ctq;;dropdown;"9. ...wurde ich von jemandem aus meiner Familie so stark geschlagen, daß ich zum Arzt oder ins Krankenhaus mußte.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_10;childhood_trauma_questionnaire_ctq;;dropdown;"10. ...gab es nichts, was ich an meiner Familie ändern wollte.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_11;childhood_trauma_questionnaire_ctq;;dropdown;"11. ...schlugen mich Personen aus meiner Familie so stark, daß ich blaue Flecken oder Schrammen davontrug.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_12;childhood_trauma_questionnaire_ctq;;dropdown;"12. ...wurde ich mit einem Gürtel, einem Stock, einem Riemen oder mit einem harten Gegenstand bestraft.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_13;childhood_trauma_questionnaire_ctq;;dropdown;"13. ...gaben meine Familienangehörigen aufeinander acht.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_14;childhood_trauma_questionnaire_ctq;;dropdown;"14. ...sagten Personen aus meiner Familie verletzende oder beleidigende Dinge zu mir.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_15;childhood_trauma_questionnaire_ctq;;dropdown;"15. Ich glaube, ich bin körperlich mißhandelt worden, als ich aufwuchs.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_16;childhood_trauma_questionnaire_ctq;;dropdown;"16. ...hatte ich eine perfekte Kindheit.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_17;childhood_trauma_questionnaire_ctq;;dropdown;"17. ...wurde ich so stark geschlagen oder verprügelt, daß es jemandem (z.B. Lehrer, Nachbar oder Arzt) auffiel.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_18;childhood_trauma_questionnaire_ctq;;dropdown;"18. ...hatte ich das Gefühl, es haßte mich jemand in meiner Familie.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_19;childhood_trauma_questionnaire_ctq;;dropdown;"19. ...fühlten sich meine Familienangehörigen einander nah.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_20;childhood_trauma_questionnaire_ctq;;dropdown;"20. ...versuchte jemand, mich sexuell zu berühren oder mich dazu zu bringen, sie oder ihn sexuell zu berühren.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_21;childhood_trauma_questionnaire_ctq;;dropdown;"21. ...drohte mir jemand, mir weh zu tun oder Lügen über mich zu erzählen, wenn ich keine sexuellen Handlungen mit ihm oder ihr ausführen würde.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_22;childhood_trauma_questionnaire_ctq;;dropdown;"22. ...hatte ich die beste Familie der Welt.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_23;childhood_trauma_questionnaire_ctq;;dropdown;"23. ...versuchte jemand, mich dazu zu bringen, sexuelle Dinge zu tun oder bei sexuellen Dingen zuzusehen.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_24;childhood_trauma_questionnaire_ctq;;dropdown;"24. ...belästigte mich jemand sexuell.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_25;childhood_trauma_questionnaire_ctq;;dropdown;"25. Ich glaube, ich bin emotional (gefühlsmäßig) mißbraucht worden, als ich aufwuchs.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_26;childhood_trauma_questionnaire_ctq;;dropdown;"26. ...gab es jemanden, der mich zum Arzt brachte, wenn ich es brauchte.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_27;childhood_trauma_questionnaire_ctq;;dropdown;"27. Ich glaube, ich bin sexuell mißbraucht worden, als ich aufwuchs.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_1_28;childhood_trauma_questionnaire_ctq;;dropdown;"28. ...war meine Familie mir eine Quelle der Unterstützung.";"1, trifft auf mich überhaupt nicht zu | 2, trifft auf mich sehr selten zu | 3, trifft auf mich einige Male zu | 4, trifft auf mich häufig zu | 5, trifft auf mich sehr häufig zu";;;;;;;;;;;;
+oid_1_1_2_6_2_1;childhood_trauma_questionnaire_ctq;;calc;"Emotionale Vernachlässigung";"sum(if([oid_1_1_2_6_1_5]=5,1,if([oid_1_1_2_6_1_5]=4,2,if([oid_1_1_2_6_1_5]=1,5,if([oid_1_1_2_6_1_5]=2,4,[oid_1_1_2_6_1_5]))))
+,if([oid_1_1_2_6_1_7]=5,1,if([oid_1_1_2_6_1_7]=4,2,if([oid_1_1_2_6_1_7]=1,5,if([oid_1_1_2_6_1_7]=2,4,[oid_1_1_2_6_1_7]))))
+,if([oid_1_1_2_6_1_13]=5,1,if([oid_1_1_2_6_1_13]=4,2,if([oid_1_1_2_6_1_13]=1,5,if([oid_1_1_2_6_1_13]=2,4,[oid_1_1_2_6_1_13]))))
+,if([oid_1_1_2_6_1_19]=5,1,if([oid_1_1_2_6_1_19]=4,2,if([oid_1_1_2_6_1_19]=1,5,if([oid_1_1_2_6_1_19]=2,4,[oid_1_1_2_6_1_19]))))
+,if([oid_1_1_2_6_1_28]=5,1,if([oid_1_1_2_6_1_28]=4,2,if([oid_1_1_2_6_1_28]=1,5,if([oid_1_1_2_6_1_28]=2,4,[oid_1_1_2_6_1_28]))))
+)";"Algorithmus zur Berechnung der Skala emotionale Vernachlässigung";;;;;;;;;;;
+oid_1_1_2_6_2_2;childhood_trauma_questionnaire_ctq;;calc;"Körperliche Vernachlässigung";"sum([oid_1_1_2_6_1_1]
+,if([oid_1_1_2_6_1_2]=5,1,if([oid_1_1_2_6_1_2]=4,2,if([oid_1_1_2_6_1_2]=1,5,if([oid_1_1_2_6_1_2]=2,4,[oid_1_1_2_6_1_2]))))
+,[oid_1_1_2_6_1_4]
+,[oid_1_1_2_6_1_6]
+,if([oid_1_1_2_6_1_26]=5,1,if([oid_1_1_2_6_1_26]=4,2,if([oid_1_1_2_6_1_26]=1,5,if([oid_1_1_2_6_1_26]=2,4,[oid_1_1_2_6_1_26]))))
+)";"Algorithmus zur Berechnung der Skala körperliche Vernachlässigung";;;;;;;;;;;
+oid_1_1_2_6_2_3;childhood_trauma_questionnaire_ctq;;calc;"Sexuelle Misshandlung";"sum([oid_1_1_2_6_1_20]
+,[oid_1_1_2_6_1_21]
+,[oid_1_1_2_6_1_23]
+,[oid_1_1_2_6_1_24]
+,[oid_1_1_2_6_1_27]
+)";"Algorithmus zur Berechnung der Skala sexuelle Misshandlung";;;;;;;;;;;
+oid_1_1_2_6_2_4;childhood_trauma_questionnaire_ctq;;calc;"Körperliche Misshandlung";"sum([oid_1_1_2_6_1_9]
+,[oid_1_1_2_6_1_11]
+,[oid_1_1_2_6_1_12]
+,[oid_1_1_2_6_1_15]
+,[oid_1_1_2_6_1_17]
+)";"Algorithmus zur Berechnung der Skala körperliche Misshandlung";;;;;;;;;;;
+oid_1_1_2_6_2_5;childhood_trauma_questionnaire_ctq;;calc;"Emotionale Misshandlung";"sum([oid_1_1_2_6_1_3]
+,[oid_1_1_2_6_1_8]
+,[oid_1_1_2_6_1_14]
+,[oid_1_1_2_6_1_18]
+,[oid_1_1_2_6_1_25]
+)";"Algorithmus zur Berechnung der Skala emotionale Misshandlung";;;;;;;;;;;
+oid_1_1_2_6_2_6;childhood_trauma_questionnaire_ctq;;calc;Bagatellisierung;"sum(if([oid_1_1_2_6_1_10]=5,1,0)
+,if([oid_1_1_2_6_1_16]=5,1,0)
+,if([oid_1_1_2_6_1_22]=5,1,0)
+)";"Algorithmus zur Berechnung der Skala Bagatellisierung";;;;;;;;;;;
+oid_1_1_2_6_2_7;childhood_trauma_questionnaire_ctq;;calc;CTQ;"sum([oid_1_1_2_6_1_1]
+,if([oid_1_1_2_6_1_2]=5,1,if([oid_1_1_2_6_1_2]=4,2,if([oid_1_1_2_6_1_2]=1,5,if([oid_1_1_2_6_1_2]=2,4,[oid_1_1_2_6_1_2]))))
+,[oid_1_1_2_6_1_3]
+,[oid_1_1_2_6_1_4]
+,if([oid_1_1_2_6_1_5]=5,1,if([oid_1_1_2_6_1_5]=4,2,if([oid_1_1_2_6_1_5]=1,5,if([oid_1_1_2_6_1_5]=2,4,[oid_1_1_2_6_1_5]))))
+,[oid_1_1_2_6_1_6]
+,if([oid_1_1_2_6_1_7]=5,1,if([oid_1_1_2_6_1_7]=4,2,if([oid_1_1_2_6_1_7]=1,5,if([oid_1_1_2_6_1_7]=2,4,[oid_1_1_2_6_1_7]))))
+,[oid_1_1_2_6_1_8]
+,[oid_1_1_2_6_1_9]
+,[oid_1_1_2_6_1_11]
+,[oid_1_1_2_6_1_12]
+,if([oid_1_1_2_6_1_13]=5,1,if([oid_1_1_2_6_1_13]=4,2,if([oid_1_1_2_6_1_13]=1,5,if([oid_1_1_2_6_1_13]=2,4,[oid_1_1_2_6_1_13]))))
+,[oid_1_1_2_6_1_14]
+,[oid_1_1_2_6_1_15]
+,[oid_1_1_2_6_1_17]
+,[oid_1_1_2_6_1_18]
+,if([oid_1_1_2_6_1_19]=5,1,if([oid_1_1_2_6_1_19]=4,2,if([oid_1_1_2_6_1_19]=1,5,if([oid_1_1_2_6_1_19]=2,4,[oid_1_1_2_6_1_19]))))
+,[oid_1_1_2_6_1_20]
+,[oid_1_1_2_6_1_21]
+,[oid_1_1_2_6_1_23]
+,[oid_1_1_2_6_1_24]
+,[oid_1_1_2_6_1_25]
+,if([oid_1_1_2_6_1_26]=5,1,if([oid_1_1_2_6_1_26]=4,2,if([oid_1_1_2_6_1_26]=1,5,if([oid_1_1_2_6_1_26]=2,4,[oid_1_1_2_6_1_26]))))
+,[oid_1_1_2_6_1_27]
+,if([oid_1_1_2_6_1_28]=5,1,if([oid_1_1_2_6_1_28]=4,2,if([oid_1_1_2_6_1_28]=1,5,if([oid_1_1_2_6_1_28]=2,4,[oid_1_1_2_6_1_28]))))
+)";"Algorithmus zur Berechnung des CTQ Scores";;;;;;;;;;;
+oid_1_1_2_6_3_1;childhood_trauma_questionnaire_ctq;;descriptive;"© James W. Pennebaker and Joan R. Susman";;;;;;;;;;;;;

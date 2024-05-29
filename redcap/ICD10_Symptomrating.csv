@@ -1,0 +1,123 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_5_0_1;icd10symptomrating;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_5_0_2;icd10symptomrating;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_5_0_3;icd10symptomrating;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_5_0_4;icd10symptomrating;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_5_0_5;icd10symptomrating;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_5_0_6;icd10symptomrating;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_5_0_7;icd10symptomrating;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:ICD-10-Symptom-Rating]) @HIDDEN"
+oid_1_1_2_5_1_1;icd10symptomrating;"Hier ist eine Liste von Beschwerden, an denen Menschen leiden können. Einige der genannten Beschwerden könnten aktuell auf Sie selbst zutreffen. Damit bei Ihnen kein Leiden übersehen wird, bitten wir Sie eine Vielzahl möglicher Beschwerden zu beurteilen. Bitte geben Sie jetzt an, ob eine der nachfolgenden Beschwerden in den letzten zwei Wochen (Ausnahme: vorletzte Beschwerde) auf Sie selbst zutrifft. Falls eine davon zutrifft, möchten wir auch wissen, wie stark Sie daran leiden. Bitte beantworten Sie jetzt spontan und zügig jede der folgenden Aussagen.";dropdown;"1. Meine Stimmung ist gedrückt/niedergeschlagen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_2;icd10symptomrating;;dropdown;"2. An Dingen, die ich normalerweise gern mache, habe ich keine richtige Freude mehr.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_3;icd10symptomrating;;dropdown;"3. Ich habe nicht genug Energie, wenn ich etwas tun will und werde schnell müde.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_4;icd10symptomrating;;dropdown;"4. Ich fühle mich wertlos/traue mir nichts zu";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_5;icd10symptomrating;;dropdown;"5. Ich bekomme unerklärliche Angstattacken oder Angst in Situationen, die anderen Menschen harmlos erscheinen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_6;icd10symptomrating;;dropdown;"6. In starken Angstsituationen habe ich plötzlich auftretende körperliche Beschwerden, z. B. Herzklopfen/-rasen, Atemnot, Schwindel, Druck auf der Brust, Kloß im Hals, Zittern oder innere Unruhe bzw. Anspannung.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_7;icd10symptomrating;;dropdown;"7. Ich versuche bestimmte Situationen, die mir Angst machen, zu vermeiden.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_8;icd10symptomrating;;dropdown;"8. Schon die Vorstellung, dass ich wieder eine Angstattacke erleiden könnte, macht mir Angst.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_9;icd10symptomrating;;dropdown;"9. Ich leide unter meinen ständig wiederkehrenden, sinnlosen Gedanken oder Handlungen, gegen die ich mich aber nicht wehren kann (z.B. Hände waschen).";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_10;icd10symptomrating;;dropdown;"10. Ich leiste Widerstand gegen immer wiederkehrende, unsinnige Gedanken oder Handlungen, auch wenn mir das nicht immer gelingt.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_11;icd10symptomrating;;dropdown;"11. Ich leide unter quälenden, sinnlosen Gedanken oder Handlungen, die mein normales Leben beeinträchtigen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_12;icd10symptomrating;;dropdown;"12. Ich habe das Bedürfnis, wegen unerklärlichen körperlichen Beschwerden zum Arzt zu gehen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_13;icd10symptomrating;;dropdown;"13. Ich leide unter der ständigen quälenden Sorge, körperlich krank zu sein.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_14;icd10symptomrating;;dropdown;"14. Verschiedene Ärzte versichern mir, dass ich keine ernsthafte körperliche Erkrankung habe, doch es fällt mir schwer, ihnen zu glauben.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_15;icd10symptomrating;;dropdown;"15. Ich kontrolliere mein Gewicht durch kalorienarmes Essen oder Erbrechen oder Medikamente (z.B. Abführmittel) oder ausgedehnten Sport.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_16;icd10symptomrating;;dropdown;"16. Viele meiner Gedanken kreisen um das Essen, und ich habe ständig Angst, Gewicht zuzunehmen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_17;icd10symptomrating;;dropdown;"17. Ich beschäftige mich viel damit, wie ich Gewicht abnehmen kann.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_18;icd10symptomrating;;dropdown;"18. Ich habe Schwierigkeiten, mich zu konzentrieren.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_19;icd10symptomrating;;dropdown;"19. Ich denke darüber nach, mich umzubringen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_20;icd10symptomrating;;dropdown;"20. Ich habe Schlafprobleme.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_21;icd10symptomrating;;dropdown;"21. Ich habe einen schlechten Appetit.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_22;icd10symptomrating;;dropdown;"22. Ich bin vergesslich.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_23;icd10symptomrating;;dropdown;"23. Ich leide unter immer wiederkehrenden Träumen oder Erinnerungen an schreckliche Erlebnisse.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_24;icd10symptomrating;;dropdown;"24. Ich habe psychische Probleme aufgrund schwerer Alltagsbelastungen (z.B. schwere Erkrankung, Verlust der Arbeit oder Trennung vom Partner).";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_25;icd10symptomrating;;dropdown;"25. Meine Gefühle und Erfahrungen empfinde ich auf einmal nicht mehr als meine eigenen.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_26;icd10symptomrating;;dropdown;"26. Die Menschen und meine Umgebung erscheinen mir auf einmal unwirklich, fern, leblos.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_27;icd10symptomrating;;dropdown;"27. Ich fühle mich in der Ausübung meiner Sexualität beeinträchtigt.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_28;icd10symptomrating;;dropdown;"28. Ich habe mich in den letzten Jahren nach einer extremen Belastung (z.B. Schädel-Hirnverletzung, Kriegserlebnisse oder Missbrauch) dauerhaft verändert.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_1_29;icd10symptomrating;;dropdown;"29. Meine sexuellen Vorlieben sind eine Belastung für mich.";"0, trifft nicht zu | 1, trifft kaum zu | 2, trifft ziemlich zu | 3, trifft deutlich zu | 4, trifft extrem zu";;;;;;;y;;;;;
+oid_1_1_2_5_2_1;icd10symptomrating;;calc;Depression;"sum([oid_1_1_2_5_1_1]
+,[oid_1_1_2_5_1_2]
+,[oid_1_1_2_5_1_3]
+,[oid_1_1_2_5_1_4]
+)/4";"Algorithmus zur Berechnung des Depression Scores";;;;;;;;;;;
+oid_1_1_2_5_2_2;icd10symptomrating;;calc;Angst;"sum([oid_1_1_2_5_1_5]
+,[oid_1_1_2_5_1_6]
+,[oid_1_1_2_5_1_7]
+,[oid_1_1_2_5_1_8]
+)/4";"Algorithmus zur Berechnung des Angst Scores";;;;;;;;;;;
+oid_1_1_2_5_2_3;icd10symptomrating;;calc;Zwang;"sum([oid_1_1_2_5_1_9]
+,[oid_1_1_2_5_1_10]
+,[oid_1_1_2_5_1_11]
+)/3";"Algorithmus zur Berechnung des Zwang Scores";;;;;;;;;;;
+oid_1_1_2_5_2_4;icd10symptomrating;;calc;Somatisierung;"sum([oid_1_1_2_5_1_12]
+,[oid_1_1_2_5_1_13]
+,[oid_1_1_2_5_1_14]
+)/3";"Algorithmus zur Berechnung des Somatisierung Scores";;;;;;;;;;;
+oid_1_1_2_5_2_5;icd10symptomrating;;calc;Essstörung;"sum([oid_1_1_2_5_1_15]
+,[oid_1_1_2_5_1_16]
+,[oid_1_1_2_5_1_17]
+)/3";"Algorithmus zur Berechnung des Essstörung Scores";;;;;;;;;;;
+oid_1_1_2_5_2_6;icd10symptomrating;;calc;Zusatzskala;"sum([oid_1_1_2_5_1_18]
+,[oid_1_1_2_5_1_19]
+,[oid_1_1_2_5_1_20]
+,[oid_1_1_2_5_1_21]
+,[oid_1_1_2_5_1_22]
+,[oid_1_1_2_5_1_23]
+,[oid_1_1_2_5_1_24]
+,[oid_1_1_2_5_1_25]
+,[oid_1_1_2_5_1_26]
+,[oid_1_1_2_5_1_27]
+,[oid_1_1_2_5_1_28]
+,[oid_1_1_2_5_1_29]
+)/12";"Algorithmus zur Berechnung des Zusatzskala Scores";;;;;;;;;;;
+oid_1_1_2_5_2_7;icd10symptomrating;;calc;ISR;"sum(
+(sum([oid_1_1_2_5_1_1]
+,[oid_1_1_2_5_1_2]
+,[oid_1_1_2_5_1_3]
+,[oid_1_1_2_5_1_4]
+)/4)
+,(sum([oid_1_1_2_5_1_5]
+,[oid_1_1_2_5_1_6]
+,[oid_1_1_2_5_1_7]
+,[oid_1_1_2_5_1_8]
+)/4)
+,(sum([oid_1_1_2_5_1_9]
+,[oid_1_1_2_5_1_10]
+,[oid_1_1_2_5_1_11]
+)/3)
+,(sum([oid_1_1_2_5_1_12]
+,[oid_1_1_2_5_1_13]
+,[oid_1_1_2_5_1_14]
+)/3)
+,(sum([oid_1_1_2_5_1_15]
+,[oid_1_1_2_5_1_16]
+,[oid_1_1_2_5_1_17]
+)/3)
+,(sum([oid_1_1_2_5_1_18]
+,[oid_1_1_2_5_1_19]
+,[oid_1_1_2_5_1_20]
+,[oid_1_1_2_5_1_21]
+,[oid_1_1_2_5_1_22]
+,[oid_1_1_2_5_1_23]
+,[oid_1_1_2_5_1_24]
+,[oid_1_1_2_5_1_25]
+,[oid_1_1_2_5_1_26]
+,[oid_1_1_2_5_1_27]
+,[oid_1_1_2_5_1_28]
+,[oid_1_1_2_5_1_29]
+)/12)
+,(sum([oid_1_1_2_5_1_18]
+,[oid_1_1_2_5_1_19]
+,[oid_1_1_2_5_1_20]
+,[oid_1_1_2_5_1_21]
+,[oid_1_1_2_5_1_22]
+,[oid_1_1_2_5_1_23]
+,[oid_1_1_2_5_1_24]
+,[oid_1_1_2_5_1_25]
+,[oid_1_1_2_5_1_26]
+,[oid_1_1_2_5_1_27]
+,[oid_1_1_2_5_1_28]
+,[oid_1_1_2_5_1_29]
+)/12)
+)/7";"Algorithmus zur Berechnung des ISR Scores";;;;;;;;;;;
+oid_1_1_2_5_3_1;icd10symptomrating;;descriptive;"© World Health Organization";;;;;;;;;;;;;

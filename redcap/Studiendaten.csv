@@ -1,0 +1,12 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_31_0_1;studiendaten;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_31_0_2;studiendaten;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_31_0_3;studiendaten;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_31_0_4;studiendaten;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_31_0_5;studiendaten;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_31_0_6;studiendaten;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_31_0_7;studiendaten;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Studiendaten]) @HIDDEN"
+oid_1_1_2_31_1_1;studiendaten;Studienabschluss;dropdown;"Wurde die Studie vorzeitig beendet?";"1, Ja | 2, Nein";;;;;;;y;;;;;
+oid_1_1_2_31_1_2;studiendaten;;dropdown;"Grund für vorzeitige Beendigung";"1, Zurückziehen der Einwilligung | 2, nach Entscheidung des Prüfers/Stellvertreters/ ärztlichen Mitglieds der Prüfgruppe | 3, PatientIn verstorben | 4, anderer Grund";;;;;;[oid_1_1_2_31_1_1]=1;y;;;;;
+oid_1_1_2_31_1_3;studiendaten;;text;"Anderer Grund für vorzeitige Beendigung";;;;;;;[oid_1_1_2_31_1_2]=4;y;;;;;
+oid_1_1_2_31_1_4;studiendaten;;text;"Datum Studienende";;;date_dmy;;;;[oid_1_1_2_31_1_1]=1;y;;;;;

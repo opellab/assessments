@@ -1,0 +1,36 @@
+﻿"Variable / Field Name";"Form Name";"Section Header";"Field Type";"Field Label";"Choices, Calculations, OR Slider Labels";"Field Note";"Text Validation Type OR Show Slider Number";"Text Validation Min";"Text Validation Max";Identifier?;"Branching Logic (Show field only if...)";"Required Field?";"Custom Alignment";"Question Number (surveys only)";"Matrix Group Name";"Matrix Ranking?";"Field Annotation"
+oid_1_1_2_12_0_1;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;"Record ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_0]) @HIDDEN"
+oid_1_1_2_12_0_2;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;"Fall ID";;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_1]) @HIDDEN"
+oid_1_1_2_12_0_3;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;Geburtsdatum;;;date_dmy;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_2]) @HIDDEN"
+oid_1_1_2_12_0_4;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;Alter;;;integer;0;110;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_3]) @HIDDEN"
+oid_1_1_2_12_0_5;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;Geschlecht;;;;;;y;;;;;;;" @CALCTEXT([oid_1_1_2_30_1_4]) @HIDDEN"
+oid_1_1_2_12_0_6;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;Erhebungszeitpunkt;;;;;;;;;;;;;" @NOW-UTC @HIDDEN"
+oid_1_1_2_12_0_7;working_alliance_inventory_revidierte_kurzfo_ee8198;;text;Abschlusszeitpunkt;;;;;;;;;;;;;" @CALCTEXT([survey-time-completed:Working Alliance Inventory - revidierte Kurzform (WAI-SR) - T]) @HIDDEN"
+oid_1_1_2_12_1_1;working_alliance_inventory_revidierte_kurzfo_ee8198;"Sie finden hier Aussagen über Aspekte der therapeutischen Arbeitsbeziehung zwischen Therapeuten und Patienten. Bitte beurteilen Sie die Aussagen auf fünf Stufen von selten bis immer. Manche Fragen sind aus einer Perspektive, die über die Therapiestunden hinausgeht, zu beantworten.";dropdown;"Meinem/r Patienten/in ist durch die Therapiestunden klarer geworden, wie er/sie sich verändern kann.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_2;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Was mein/e Patient/in in der Therapie macht, eröffnet ihr/ihm neue Sichtweisen auf ihr/sein Problem.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_3;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Ich mag meine/n Patienten/in.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_4;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Mein/e Patient/in und ich arbeiten gemeinsam daran, Therapieziele zu setzen.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_5;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Mein/e Patient/in und ich achten einander.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_6;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Wir arbeiten auf Ziele hin über die wir uns einig sind.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_7;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Ich schätze meine/n Patienten/in.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_8;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Mein/e Patient/in und ich stimmen überein, woran es für ihn/sie wichtig ist zu arbeiten.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_9;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Ich stehe auch dann zu meinem/r Patienten/in, wenn er/sie etwas tut, was ich nicht gutheiße.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_10;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Ich spüre, dass das, was wir in der Therapie tun, ihm/ihr helfen wird, die von ihm/ihr gewünschten Veränderungen zu erreichen.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_11;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Mein/e Patient/in und ich sind uns im Klaren darüber, welche Veränderungen gut für ihn/sie wären.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_1_12;working_alliance_inventory_revidierte_kurzfo_ee8198;;dropdown;"Ich glaube, dass es richtig ist, wie wir am Problem meiner/s Patienten/in arbeiten.";"1, Selten | 2, Manchmal | 3, Öfters | 4, Sehr oft | 5, Immer";;;;;;;y;;;;;
+oid_1_1_2_12_2_1;working_alliance_inventory_revidierte_kurzfo_ee8198;;calc;Goal;"sum([oid_1_1_2_12_1_4]
+,[oid_1_1_2_12_1_6]
+,[oid_1_1_2_12_1_8]
+,[oid_1_1_2_12_1_11]
+)";"Algorithmus zur Berechnung des Goal Items";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_12_2_2;working_alliance_inventory_revidierte_kurzfo_ee8198;;calc;Task;"sum([oid_1_1_2_12_1_1]
+,[oid_1_1_2_12_1_2]
+,[oid_1_1_2_12_1_10]
+,[oid_1_1_2_12_1_12]
+)";"Algorithmus zur Berechnung des Task Items";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_12_2_3;working_alliance_inventory_revidierte_kurzfo_ee8198;;calc;Bond;"sum([oid_1_1_2_12_1_3]
+,[oid_1_1_2_12_1_5]
+,[oid_1_1_2_12_1_7]
+,[oid_1_1_2_12_1_9]
+)";"Algorithmus zur Berechnung des Bond Items";;;;;;;;;;;" @HIDDEN"
+oid_1_1_2_12_3_1;working_alliance_inventory_revidierte_kurzfo_ee8198;;descriptive;"© Society for Psychotherapy Research (SPR)";;;;;;;;;;;;;
